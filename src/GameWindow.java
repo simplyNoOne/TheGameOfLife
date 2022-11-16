@@ -60,7 +60,6 @@ public class GameWindow extends JFrame implements ActionListener {
             b.setFocusable(false);
 
         }
-
         grid.setLayout(new GridLayout(manager.getGridSize(), manager.getGridSize()));
 
     }

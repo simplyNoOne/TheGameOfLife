@@ -1,4 +1,3 @@
-import java.io.IOException;
 
 public class TheGame {
 
@@ -12,7 +11,6 @@ public class TheGame {
 
         while(true){
             if(!manager.getGamePaused()) {
-
                 try {
                     Thread.sleep(150);
                 } catch (InterruptedException e) {
@@ -21,6 +19,9 @@ public class TheGame {
                 manager.iteration();
                 window.update();
             }
+            else
+                System.out.print(".");
+
         }
     }
 }

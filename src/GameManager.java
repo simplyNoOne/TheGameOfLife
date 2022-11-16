@@ -17,8 +17,11 @@ public class GameManager {
     }
 
     int getGridSize(){return grid.length;}
-    void setGamePaused(boolean paused){this.paused = paused;}
+    void setGamePaused(boolean paused) {
+        this.paused = paused;
+    }
     boolean getGamePaused(){return paused;}
+
 
     public void randomize(){
         for(int i = 0; i < grid.length; i++){
